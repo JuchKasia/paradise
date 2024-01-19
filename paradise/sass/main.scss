@@ -24,6 +24,9 @@ body {
     font-size: 1.6rem;
 }
 
+
+// NAV
+
 .burger-btn {
     position: fixed;
     top: 20px;
@@ -68,4 +71,20 @@ body {
             transition-delay: 0.1s;
         }
     }
+}
+
+
+// HEADER
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: color.$pure-white;
+    border: 1px solid red;
 }

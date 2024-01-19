@@ -105,4 +105,17 @@ body {
   top: 27px;
   width: 30%;
   transition-delay: 0.1s;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  border: 1px solid red;
 }/*# sourceMappingURL=main.css.map */
