@@ -86,5 +86,29 @@ body {
     justify-content: center;
     text-align: center;
     color: color.$pure-white;
+    @include mixins.heroImages('../assets/img/polynesia-640.jpg');
+    background-attachment: scroll;
     border: 1px solid red;
+    &__title {
+        font-family: 'Dancing Script', cursive;
+        font-size: 4.8rem;
+        font-weight: 300;
+    }
+    &__text {
+        font-size: 1.4rem;
+    }
+    &__btn {
+        margin-top: 2em;
+        padding: 0.8em 1.6em;
+        color: color.$dark;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: none;
+        border-radius: 8px;
+        background-color: color.$pure-white;
+        cursor: pointer;
+        &::before {
+            background-color: color.$light-white;
+        }
+    }
 }
