@@ -112,3 +112,25 @@ body {
         }
     }
 }
+
+
+// MEDIA
+
+@media (min-width: 768px) {
+    .white-block {
+        width: 45%;
+        height: 50px;
+    }
+    .header {
+        &__title {
+            font-size: 6.6rem;
+        }
+        &__text {
+            font-size: 2.2rem;
+        }
+        &__btn {
+            font-size: 1.6rem;
+        }
+    }
+}
+
