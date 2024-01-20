@@ -134,3 +134,17 @@ body {
     }
 }
 
+@media (min-width: 992px) {
+    .burger-btn {
+        top: 50px;
+        right: 50px;
+    }
+    .header {
+        background-image: color.$blue-gradient, url('../assets/img/polynesia-1920.jpg');
+        .header {
+            &__title {
+                font-size: 10rem;
+            }
+        }
+    }
+}
