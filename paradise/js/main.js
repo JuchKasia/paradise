@@ -3,7 +3,7 @@ const burgerBtn = document.querySelector('.burger-btn');
 const navItems = document.querySelectorAll('.nav__item');
 
 
-const handle = () => {
+const handleNav = () => {
     nav.classList.toggle('nav--active');
 
     navItems.forEach(item => {
@@ -13,4 +13,4 @@ const handle = () => {
     })
 }
 
-burgerBtn.addEventListener('click', handle);
+burgerBtn.addEventListener('click', handleNav);
