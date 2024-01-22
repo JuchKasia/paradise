@@ -148,6 +148,18 @@ body {
   transition: transform 0.5s;
 }
 
+@keyframes navItemAnimation {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.nav-items-animation {
+  animation: navItemAnimation 1s;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -163,7 +175,6 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-attachment: scroll;
-  border: 1px solid red;
 }
 .header__title {
   font-family: "Dancing Script", cursive;
