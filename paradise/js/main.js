@@ -3,14 +3,26 @@ const burgerBtn = document.querySelector('.burger-btn');
 const navItems = document.querySelectorAll('.nav__item');
 
 
-const handle = () => {
+const handleNav = () => {
     nav.classList.toggle('nav--active');
-
     navItems.forEach(item => {
         item.addEventListener('click', () => {
             nav.classList.remove('nav--active');
         })
     })
+    handleNavItemsAnimation();
+    
 }
 
-burgerBtn.addEventListener('click', handle);
+
+const handleNavItemsAnimation = () => {
+    let delayTime = 0;
+
+    navItems.forEach(item => {
+        item.classList.toggle('nav-items-animation');
+        item.style.animationDelay = '.' + delayTime + 's';
+        delayTime++;
+    })
+}
+
+burgerBtn.addEventListener('click', handleNav);

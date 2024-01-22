@@ -113,6 +113,21 @@ body {
     }
 }
 
+@keyframes navItemAnimation {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.nav-items-animation {
+    animation: navItemAnimation 1s both;
+    // animation-delay: .3s;
+
+}
+
 // HEADER
 
 .header {
@@ -127,7 +142,7 @@ body {
     color: color.$pure-white;
     @include mixins.heroImages('../assets/img/polynesia-640.jpg');
     background-attachment: scroll;
-    border: 1px solid red;
+    // border: 1px solid red;
     &__title {
         font-family: 'Dancing Script', cursive;
         font-size: 4.8rem;
