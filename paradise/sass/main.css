@@ -266,6 +266,31 @@ body {
   padding: 1em 0;
 }
 
+.islands __card {
+  position: relative;
+  margin: 1em 0;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+  perspective: 1000px;
+}
+.islands __card-img {
+  padding: 2em;
+  height: 100%;
+  border-radius: 8px;
+  block-size: cover;
+  border: 1px solid red;
+}
+.islands __card-img--first {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("../assets/img/la-digue-640.jpg");
+}
+.islands __card-img--second {
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../assets/img/matsu-islands-640.jpg");
+}
+.islands __card-img--third {
+  background-image: linear-gradient(45deg, rgba(190, 10, 214, 0.75), rgba(68, 0, 255, 0.75)), url("../assets/img/greece-640.jpg");
+}
+
 @media (min-width: 576px) {
   .dreams__box {
     flex-direction: row;
