@@ -269,10 +269,11 @@ body {
 .islands__card {
   position: relative;
   margin: 1em 0;
-  height: 100px;
+  height: 450px;
   color: #fff;
   text-align: center;
   perspective: 1000px;
+  border: 1px solid red;
 }
 .islands__card:hover .islands__card-img {
   transform: rotateY(-180deg);
@@ -286,7 +287,7 @@ body {
   padding: 2em;
   height: 100%;
   border-radius: 8px;
-  block-size: cover;
+  background-size: cover;
   transition: transform 1s, opacity 1s;
 }
 .islands__card-img--first {
@@ -307,6 +308,9 @@ body {
   bottom: 30px;
   right: 30px;
   font-size: 1.8rem;
+}
+.islands__card-img-info i {
+  margin-right: 0.3em;
 }
 
 @media (min-width: 576px) {
