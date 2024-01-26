@@ -213,6 +213,40 @@ body {
 }
 
 
+
+// section ISLAND
+.islands {
+   & __card {
+    position: relative;
+    margin: 1em 0;
+    height: 100px;
+    color: color.$pure-white;
+    text-align: center;
+    perspective: 1000px;
+    &-img {
+        padding: 2em;
+        height: 100%;
+        border-radius: 8px;
+        block-size: cover;
+        border: 1px solid red;
+        &--first {
+            background-image: color.$light-blue-gradient, url('../assets/img/la-digue-640.jpg');
+        }
+        &--second {
+            background-image: color.$blue-gradient, url('../assets/img/matsu-islands-640.jpg');
+        }
+        &--third {
+            background-image: color.$purple-gradient, url('../assets/img/greece-640.jpg');
+        }
+    }
+   }
+
+}
+
+
+
+
+
 // MEDIA
 
 @media (min-width: 576px) {
