@@ -273,7 +273,6 @@ body {
   color: #fff;
   text-align: center;
   perspective: 1000px;
-  border: 1px solid red;
 }
 .islands__card:hover .islands__card-img {
   transform: rotateY(-180deg);
@@ -311,6 +310,14 @@ body {
 }
 .islands__card-img-info i {
   margin-right: 0.3em;
+}
+.islands__card-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: radial-gradient(circle at top right, rgb(0, 78, 255) 0%, rgb(0, 212, 255) 100%);
 }
 
 @media (min-width: 576px) {

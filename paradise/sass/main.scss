@@ -223,7 +223,7 @@ body {
         color: color.$pure-white;
         text-align: center;
         perspective: 1000px;
-        border: 1px solid red;
+        // border: 1px solid red;
         &:hover {
             .islands__card-img {
                 transform: rotateY(-180deg);
@@ -265,7 +265,17 @@ body {
 
             }
         }
+        &-info {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: color.$light-blue-gradient-solid;
+
+        }
     }
+    
 
 }
 
