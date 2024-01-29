@@ -288,6 +288,19 @@ body {
                 font-size: 2.8rem;
                 transform: translateX(-50%);
             }
+            &-list {
+                margin: 0 auto;
+                width: 70%;
+                list-style: none;
+                &-item {
+                    padding: 1em;
+                    font-size: 1.4rem;
+                    border-bottom: 1px solid color.$light-white;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
 
         }
     }

@@ -335,6 +335,19 @@ body {
   font-size: 2.8rem;
   transform: translateX(-50%);
 }
+.islands__card-info-list {
+  margin: 0 auto;
+  width: 70%;
+  list-style: none;
+}
+.islands__card-info-list-item {
+  padding: 1em;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #eee;
+}
+.islands__card-info-list-item:last-child {
+  border-bottom: none;
+}
 
 @media (min-width: 576px) {
   .dreams__box {
