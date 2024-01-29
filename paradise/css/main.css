@@ -348,6 +348,21 @@ body {
 .islands__card-info-list-item:last-child {
   border-bottom: none;
 }
+.islands__card-info-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 2em;
+  padding: 1em;
+  width: 80%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  border: none;
+  background-color: #00ffaa;
+  cursor: pointer;
+}
+.islands__card-info-btn:hover {
+  background-color: #0fe29c;
+}
 
 @media (min-width: 576px) {
   .dreams__box {

@@ -301,6 +301,25 @@ body {
                     }
                 }
             }
+            &-btn {
+                position: absolute;
+                // top: 1.2em;
+                left: 50%;
+                bottom: 2em;
+                padding: 1em;
+                width: 80%;
+                // font-family: 'Dancing Script', cursive;
+                // font-size: 2.8rem;
+                transform: translateX(-50%);
+                border-radius: 8px;
+                border: none;
+                background-color: color.$green-color;
+                cursor: pointer;
+                
+            }
+            &-btn:hover {
+                background-color: color.$green-color-hover;
+            }
 
         }
     }
