@@ -281,12 +281,10 @@ body {
             transform: rotateY(180deg);
             transition: transform 1s, opacity 1s;
             &-title {
-                position: absolute;
+                @include mixins.islandCardStyle;
                 top: 1.2em;
-                left: 50%;
                 font-family: 'Dancing Script', cursive;
                 font-size: 2.8rem;
-                transform: translateX(-50%);
             }
             &-list {
                 margin: 0 auto;
@@ -302,20 +300,14 @@ body {
                 }
             }
             &-btn {
-                position: absolute;
-                // top: 1.2em;
-                left: 50%;
+                @include mixins.islandCardStyle;
                 bottom: 2em;
                 padding: 1em;
                 width: 80%;
-                // font-family: 'Dancing Script', cursive;
-                // font-size: 2.8rem;
-                transform: translateX(-50%);
                 border-radius: 8px;
                 border: none;
                 background-color: color.$green-color;
                 cursor: pointer;
-                
             }
             &-btn:hover {
                 background-color: color.$green-color-hover;
