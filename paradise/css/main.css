@@ -287,6 +287,7 @@ body {
   height: 100%;
   border-radius: 8px;
   background-size: cover;
+  background-position: center;
   transition: transform 1s, opacity 1s;
 }
 .islands__card-img--first {
@@ -412,6 +413,15 @@ body {
   }
   .hero-img__text {
     font-size: 2.2rem;
+  }
+  .islands__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .islands__card {
+    width: 45%;
+    margin: 1em;
   }
 }
 @media (min-width: 992px) {

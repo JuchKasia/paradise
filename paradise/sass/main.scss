@@ -239,6 +239,7 @@ body {
             height: 100%;
             border-radius: 8px;
             background-size: cover;
+            background-position: center;
             transition: transform 1s, opacity 1s;
             // border: 1px solid red;
             &--first {
@@ -312,11 +313,8 @@ body {
             &-btn:hover {
                 background-color: color.$green-color-hover;
             }
-
         }
     }
-    
-
 }
 
 
@@ -382,6 +380,17 @@ body {
         }
         &__text {
             font-size: 2.2rem;
+        }
+    }
+    .islands {
+        &__cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__card {
+            width: 45%;
+            margin: 1em;
         }
     }
 }
