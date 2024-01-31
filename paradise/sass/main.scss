@@ -402,7 +402,6 @@ body {
             &-img {
                 width: 50%;
                 height: auto;
-                transition: transform .3s;
                 &--right {
                     order: 1;
                 }
@@ -513,6 +512,21 @@ body {
         }
         &__title {
             font-size: 7.2rem;
+        }
+    }
+    .offers {
+        background-image: color.$blue-gradient, url('../assets/img/maldives2-1920.jpg');
+        &__option {
+            &-img {
+                object-fit: cover;
+                height: 300px;
+                &--right {
+                    order: 1;
+                }
+            }
+            &-text {
+                font-size: 1.5rem;
+            }
         }
     }
 }
