@@ -391,6 +391,8 @@ body {
 }
 .offers__option-info {
   padding: 2em;
+  background-color: #fff;
+  z-index: 10;
 }
 .offers__option-title {
   margin-bottom: 0.5em;
@@ -436,6 +438,32 @@ body {
   .dreams__img {
     margin-bottom: 0;
     max-height: 300px;
+  }
+  .offers__option {
+    display: flex;
+    margin: 2em 0;
+    width: 100%;
+  }
+  .offers__option-img {
+    width: 50%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .offers__option-img--right {
+    order: 1;
+  }
+  .offers__option-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .offers__option-title {
+    margin-bottom: 0.5em;
+    font-size: 3.6rem;
+  }
+  .offers__option-btn {
+    padding: 1em;
   }
 }
 @media (min-width: 768px) {
@@ -515,6 +543,17 @@ body {
   }
   .hero-img__title {
     font-size: 7.2rem;
+  }
+  .offers {
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../assets/img/maldives2-1920.jpg");
+  }
+  .offers__option-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+  }
+  .offers__option-text {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1100px) {

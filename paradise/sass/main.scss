@@ -340,6 +340,8 @@ body {
         }
         &-info {
         padding: 2em;
+        background-color: color.$pure-white;
+        z-index: 10;
         }
         &-title {
             margin-bottom: 0.5em;
@@ -365,7 +367,6 @@ body {
             }
         }
     }
-    
 }
 
 
@@ -392,10 +393,35 @@ body {
         &__img {
             margin-bottom: 0;
             max-height: 300px;
-
         }
     }
-
+    .offers {
+        &__option {
+            display: flex;
+            margin: 2em 0;
+            width: 100%;
+            &-img {
+                width: 50%;
+                height: auto;
+                object-fit: cover;
+                &--right {
+                    order: 1;
+                }
+            }
+            &-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            &-title {
+                margin-bottom: 0.5em;
+                font-size: 3.6rem;
+            }
+            &-btn {
+                padding: 1em;
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -488,6 +514,18 @@ body {
         }
         &__title {
             font-size: 7.2rem;
+        }
+    }
+    .offers {
+        background-image: color.$blue-gradient, url('../assets/img/maldives2-1920.jpg');
+        &__option {
+            &-img {
+                object-fit: cover;
+                height: 300px;
+            }
+            &-text {
+                font-size: 1.5rem;
+            }
         }
     }
 }
