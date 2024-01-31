@@ -340,6 +340,8 @@ body {
         }
         &-info {
         padding: 2em;
+        background-color: color.$pure-white;
+        z-index: 10;
         }
         &-title {
             margin-bottom: 0.5em;

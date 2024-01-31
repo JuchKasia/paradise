@@ -391,6 +391,8 @@ body {
 }
 .offers__option-info {
   padding: 2em;
+  background-color: #fff;
+  z-index: 10;
 }
 .offers__option-title {
   margin-bottom: 0.5em;
