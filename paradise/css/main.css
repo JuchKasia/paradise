@@ -447,6 +447,8 @@ body {
   .offers__option-img {
     width: 50%;
     height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .offers__option-img--right {
     order: 1;
@@ -549,9 +551,6 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     height: 300px;
-  }
-  .offers__option-img--right {
-    order: 1;
   }
   .offers__option-text {
     font-size: 1.5rem;
