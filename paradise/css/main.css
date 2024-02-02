@@ -538,6 +538,11 @@ body {
     margin: 1em;
   }
 }
+@media (max-width: 767px) {
+  .reviews.section-padding {
+    padding: 6em 0;
+  }
+}
 @media (min-width: 992px) {
   .burger-btn {
     top: 50px;
