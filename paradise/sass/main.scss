@@ -370,6 +370,20 @@ body {
 }
 
 
+// section REVIEWS
+.reviews {
+    &__box {
+        position: relative;
+        margin: 2em;
+        padding: 2em;
+        border-radius: 8px;
+        box-shadow: 3px 3px 10px #2e2e2e2e;
+    }
+}
+
+
+
+
 // MEDIA
 
 @media (min-width: 576px) {
