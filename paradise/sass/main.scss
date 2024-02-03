@@ -372,6 +372,14 @@ body {
 
 // section REVIEWS
 .reviews {
+    &__boxes {
+        position: relative;
+        display: flex;
+        max-width: 1000px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
     &__box {
         position: relative;
         margin: 2em;
@@ -379,6 +387,7 @@ body {
         border-radius: 8px;
         box-shadow: 3px 3px 10px #2e2e2e2e;
         transition: transform .3s;
+        // border: 1px solid blue;
         &:hover {
             transform: scale(0.95);
         }
@@ -407,7 +416,15 @@ body {
     }
 }
 
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
 
+@keyframes fade {
+    from {opacity: .3} 
+    to {opacity: 1}
+}
 
 
 // MEDIA
@@ -506,6 +523,12 @@ body {
             width: 45%;
             margin: 1em;
         }
+    }
+}
+
+@media (max-width: 767px) {
+    .reviews.section-padding {
+        padding: 6em 0;
     }
 }
 
