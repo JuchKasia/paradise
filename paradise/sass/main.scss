@@ -427,6 +427,51 @@ body {
 }
 
 
+// section CONTACT
+.contact {
+    position: relative;
+    background-color: color.$light-white;
+    overflow: hidden;
+    .white-block-left {
+        background-color: color.$dark;
+    }
+    &__form,
+    &__form-top {
+        display: flex;
+        flex-direction: column;
+    }
+    &__form-label {
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+    }
+    &__form-input {
+        @include mixins.contactForm;
+    }
+    &__form-textarea {
+        @include mixins.contactForm;
+        max-width: 100%;
+        width: 100%;
+        min-height: 150px;
+    }
+    &__form-btn {
+        align-self: flex-end;
+        padding: 1em;
+        max-width: 300px;
+        width: 100%;
+        color: color.$pure-white;
+        background-color: color.$main-color;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        &::before {
+            background-color: color.$secondary-color;
+        }
+    }
+}
+
+
+
+
 // MEDIA
 
 @media (min-width: 576px) {
