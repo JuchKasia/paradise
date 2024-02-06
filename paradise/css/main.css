@@ -522,6 +522,22 @@ body {
   background-color: #164dcc;
 }
 
+.footer {
+  color: #fff;
+  background-color: #2e2e2e;
+}
+.footer .wrapper {
+  padding: 6em 2em 2em;
+}
+.footer__box {
+  font-size: 1.4rem;
+}
+.footer__box-title {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
 @media (min-width: 576px) {
   .dreams__box {
     flex-direction: row;
