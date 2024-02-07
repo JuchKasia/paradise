@@ -24,6 +24,13 @@ body {
     font-size: 1.6rem;
 }
 
+.black-bars-color,
+.black-bars-colo::after,
+.black-bars-color::before {
+    background-color: color.$dark;
+
+}
+
 
 // NAV
 

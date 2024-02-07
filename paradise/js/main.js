@@ -1,6 +1,11 @@
 const nav = document.querySelector('.nav');
 const burgerBtn = document.querySelector('.burger-btn');
 const navItems = document.querySelectorAll('.nav__item');
+const navBtnBArs = document.querySelector('.burger-btn__bars');
+const allSections = document.querySelectorAll('.section');
+const footerYear = document.querySelector('.footer__year');
+
+
 
 
 const handleNav = () => {
@@ -42,3 +47,12 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";  
     setTimeout(showSlides, 2000);
 }
+
+
+// change current year
+const handleCurrentYear = () => {
+    const year = (new Date).getFullYear();
+    footerYear.innerText = year;
+}
+
+handleCurrentYear();
