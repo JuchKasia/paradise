@@ -1,6 +1,11 @@
 const nav = document.querySelector('.nav');
 const burgerBtn = document.querySelector('.burger-btn');
 const navItems = document.querySelectorAll('.nav__item');
+const navBtnBars = document.querySelector('.burger-btn__bars');
+const allSections = document.querySelectorAll('.section');
+const footerYear = document.querySelector('.footer__year');
+
+
 
 
 const handleNav = () => {
@@ -11,7 +16,6 @@ const handleNav = () => {
         })
     })
     handleNavItemsAnimation();
-    
 }
 
 
@@ -42,3 +46,26 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";  
     setTimeout(showSlides, 2000);
 }
+
+//   change color of nav btns`, when use scroll
+const handleObserver = () => {
+    const currentSection = window.scrollY;
+    allSections.forEach(section => {
+        if (section.classList.contains('white-section') && section.offsetTop <= currentSection + 60) {
+            navBtnBars.classList.add('black-bars-color');
+        } else if (!section.classList.contains('white-section') && section.offsetTop <= currentSection + 60) {
+            navBtnBars.classList.remove('black-bars-color');
+        }
+    })
+}
+window.addEventListener('scroll', handleObserver)
+
+
+// change current year
+const handleCurrentYear = () => {
+    const year = (new Date).getFullYear();
+    footerYear.innerText = year;
+}
+
+handleCurrentYear();
+// handleObserver()
