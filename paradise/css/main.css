@@ -94,12 +94,6 @@ body {
   font-size: 1.6rem;
 }
 
-.black-bars-color,
-.black-bars-colo::after,
-.black-bars-color::before {
-  background-color: #2e2e2e;
-}
-
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -234,6 +228,12 @@ body {
 }
 .header__btn::before {
   background-color: #eee;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #2e2e2e;
 }
 
 .dreams__box {
